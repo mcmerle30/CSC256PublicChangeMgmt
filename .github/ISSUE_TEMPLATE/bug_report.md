@@ -1,57 +1,56 @@
 ---
-name: Bug report
+name: Bug report (Mcmemrle)
 about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+title: 'Bug 1'
+labels: 'Assertion Error'
+assignees: 'Wake Tech'
 
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+User Input for retirment past year 2020 causing error in program
 
 **Program**
-The name of the program/version/build you are running.
+Retirment Calculator
 
 **Component**
-By default, all bugs associated with a given component are routed to the lead developer for that component.
+Full_Retirement_Calc.py
 
 **Error Type**
-Behavioral error, Documentation error, Design error. 
+Coding Error
 
 **Severity**
-Fatal, Severe, Minor, Nuisance.
+Fatal
 
 **Priority**
-Set by management
+TBD
 
 **State**
-Open/Accepted/Working/Test/Rejected/Deferred/Closed
+Fixed
 
 **To Reproduce**
 Steps to reproduce the behavior:
-1. First thing to do
-1. Next thing to do
-.
-.
-. 
-
+1. 1.	Run “test__full_retirement_calc.py” module : test_retirement_0
+2.	Shows Assertion Error for 2020 Input Error
+3.	Move to “Current_Year” on Full_retirement_calc.py Then to module full_retirement_age. The First “IF” loop returns the current year and this returns -1, -1. 
+4.	.Change Return Statement to Return 67, 0. This is pulled from the Social security website as the last age to retire at currently. 
+5.	This will make this clear this Assertion Error 
 **Expected behavior**
-A clear and concise description of what you expected to happen.
+With these changes the user will be able to input any age free up to our current year for finding the retirement age by inputting the year and month they were born in.
 
 **Screenshots**
-If applicable, add screenshots to help explain your problem.
+
 
 **Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+ - OS: Windows 10
+ - Browser Chrome
+ 
 
 **Additional context**
-Add any other context about the problem here.
+N/A
 
 **Assigned**
-Current owner of the issue.  Initially, assigned to the Component's lead developer.
+Unassigned
 
 **Defect Type**
 For ODC later.  
